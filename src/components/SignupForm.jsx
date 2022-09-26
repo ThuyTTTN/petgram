@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Form, Button,  Col } from 'react-bootstrap';
  
 
 const SignupForm = () => {
+    const [validated, setValidated] = useState(false);
+
+    const handleSubmit = (e) => {
+        const form = e.currentTarget;
+        if (form.checkValidity() === false) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+        
+        setValidated(true);
+    };
+
     return (
         <>
-            <Form>
+            <Form noValidate validated={validated} on Submit={handleSubmit}>
                 <Form.Group as={Col} md="4" className="mb-3" controlId="formBasicName">
                     <Form.Label>Name</Form.Label>
                     <Form.Control type='text' placeholder='Your name' name='email' required/>
