@@ -18,15 +18,7 @@ const AppNavbar = () => {
           </Nav>
         </Container>
       </Navbar>
-      {/* <Navbar bg="dark"variant="light" expand="lg">
-        <Container>
-          <Navbar.Brand>Navbar Here</Navbar.Brand>
-          <ul>
-            <li>Home</li>
-            <li>Login</li>
-          </ul>
-        </Container>
-      </Navbar> */}
+      
     </>
   );
 };
