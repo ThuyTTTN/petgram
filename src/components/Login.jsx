@@ -16,9 +16,9 @@ const Login = () => {
 
   return (
     <div className="loginContainer">
-      <Form className="formBox" noValidate validated={validated} on Submit={handleSubmit}>
+      <Form className="formBox" noValidate validated={validated} onSubmit={handleSubmit}>
         <Form.Group as={Col} controlId="formBasicEmail">
-          <Form.Label htmlFor="email">Email</Form.Label>
+          <Form.Label >Email</Form.Label>
           <Form.Control
             type="text"
             placeholder="Your email"
@@ -35,7 +35,7 @@ const Login = () => {
           className="mb-3"
           controlId="formBasicPassword"
         >
-          <Form.Label hmtlFor="password">Password</Form.Label>
+          <Form.Label >Password</Form.Label>
           <Form.Control
             type="password"
             placeholder="Your password"
