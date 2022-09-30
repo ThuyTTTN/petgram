@@ -11,7 +11,7 @@ const AppNavbar = () => {
         <Container>
           <Navbar.Brand href="/"><i class="fa-solid fa-paw"></i>  PetGram</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="/dashboard">Home</Nav.Link>
+            <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/login">Login</Nav.Link>
             <Nav.Link href="/signupform">Signup</Nav.Link>
           </Nav>
